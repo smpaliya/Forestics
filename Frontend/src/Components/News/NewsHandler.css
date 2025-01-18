@@ -1,0 +1,141 @@
+/* General body styles */
+body {
+    background: #e7f9e7; /* Light green background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000; /* Default text color set to black */
+  }
+  
+  /* Faded background for the top section */
+  .faded-background {
+    background: linear-gradient(to bottom, rgba(144, 238, 144, 0.8), rgba(231, 249, 231, 1)); /* Fade effect */
+    padding: 20px 0; /* Smaller top padding */
+    text-align: center;
+    position: relative; /* Position relative for pseudo-element */
+  }
+  
+  /* Decorative line styles */
+  
+  
+  /* Main container styles */
+  .container {
+    /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 60px 20px; /* Adjust padding for spacing */
+    position:relative;
+  top:10vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  }
+  
+  /* Title styles */
+  h1 {
+    font-size: 3.5rem; /* Adjusted font size */
+    color: #000; /* Black color */
+    margin: 0; /* Removed margin */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    font-family: 'Georgia', serif; /* Changed font for the NEWS heading */
+  }
+  
+  /* Subtitle styles */
+  h2 {
+    font-size: 1.2rem; /* Decreased subtitle size */
+    color: #000; /* Black color */
+    margin: 10px 0 20px; /* Margin adjusted for better spacing */
+  }
+  
+  /* News container styles */
+  /* News item styles */
+  .news-item {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0; /* Increased margin */
+    background: white; /* Background for news items */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    width: 100%; /* Make the news item take the full width */
+    position: relative; /* Position for pseudo-element */
+  }
+  
+  /* Decorative line below news items */
+  .news-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Height of the line */
+    background: rgba(0, 0, 0, 0.2); /* Line color */
+    width: 100%; /* Full width line */
+  }
+  
+  /* Hover effect for news items */
+  .news-item:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  
+  /* Info section styles */
+  .news-info {
+    flex: 1; /* This allows the info section to take the remaining space */
+  }
+  
+  /* Heading styles */
+  .news-heading {
+    margin: 0;
+    font-size: 1.6rem; /* Slightly larger heading */
+    color: #000; /* Black color for headings */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Description styles */
+  .news-description {
+    margin: 10px 0;
+    font-size: 1rem; /* Consistent size for descriptions */
+    color: #000; /* Black color for descriptions */
+  }
+  
+  /* Link styles */
+  .read-more {
+    color: #000; /* Black color for links */
+    text-decoration: none;
+    font-weight: bold; /* Bold link text */
+    transition: color 0.3s; /* Transition for hover effect */
+  }
+  
+  .read-more:hover {
+    color: #555; /* Dark gray shade on hover */
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  /* Detail container styles */
+  .detail-container {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Smaller title on mobile */
+    }
+    h2 {
+        font-size: 1.2rem; /* Smaller subtitle on mobile */
+    }
+    .news-item {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center align */
+    }
+    .news-image {
+        margin-bottom: 10px; /* Add space below the image */
+    }
+  }
+  

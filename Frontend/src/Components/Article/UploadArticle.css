@@ -1,0 +1,94 @@
+.upload-article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 0;
+    padding-top: 10rem;
+}
+
+.upload-area {
+    border: 2px dashed #338d2d;
+    border-radius: 10px;
+    text-align: center;
+    width: 35vw;
+    height: 40vh;
+    margin-top:10vh ;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-self: center; 
+    align-self: center; 
+    justify-items: center;
+    align-items: center;
+}
+
+.upload-area input[type="file"] {
+    display: none; 
+}
+
+.upload-area label {
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #348637;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Keep it inline-block */
+    margin-top: 10px;
+    width: 150px; /* Set a fixed width for the button */
+    text-align: center; /* Center text within the button */
+}
+
+.uploaded-image {
+    margin-top: 10px;
+    max-width: 100%; /* Keep the width responsive */
+    height: 300px; /* Fixed height for the image section */
+    object-fit: cover; /* Maintain aspect ratio and fill the space */
+    border-radius: 5px; /* Optional: add some rounding to the image */
+}
+
+.details-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details-area textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60vw;
+}
+
+.details-area textarea {
+    height: 200px; /* Increased height for the textarea */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #348637;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1; /* Make buttons take equal space */
+    margin: 0 5px; /* Space between buttons */
+}
+
+.button-group button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+.articleuploadh1{
+    font-size: 15px;
+    align-self: center;
+}
+.titleinputarticle{
+    width: 62vw;
+    height: 6vh;
+}

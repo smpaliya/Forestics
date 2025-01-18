@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&display=swap');
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.catamaran-bold {
+  font-family: "Catamaran", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.bird-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.bird-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bird-item:hover {
+  transform: translateY(-5px);
+}
+
+.birdname {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.birddetails, .birdhabitat, .birddiet {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+.consstat {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #3498db;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .bird-details {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes tipsy {
+    0%{
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    background-color: #e6f0dc;
+  }
+  .point{
+    font-size: 30px;
+    margin-top: 0vh;
+    font-family:"Cormorant Garamond", serif ;
+    left: 2vw;
+    position: relative; /* So quotes are positioned relative to this */
+  
+    margin: 10px;
+  }
+  .leafBackg{
+    width: 100vw;
+    height: 90vh;
+    position: absolute; /* Ensure it's in the background */
+    top: 0vh;
+    left: 0;
+    z-index: -1; 
+   
+  }
+  .submit{
+    color: #7ba452;
+  }
+  .homeDiv1 {
+    position:relative; /* Keeps content inside flowing normally */
+    height: 80vh; /* Adjust this based on how much space you want it to take */
+    width: 100vw;
+    justify-content:center;
+    margin-top: 0vh;
+    top: 0vh;
+    left: 0;
+  }
+  .homeDiv2 {
+    margin-top: 150vh; /* Adjust to ensure it appears below homeDiv1 */
+    position: absolute;
+    margin-left: 5vw;
+    z-index: 10; /* To ensure it stays above background and does not overlap with it */
+  }
+  .headingmain {
+    margin-top: 0vh;
+    color: #f2f2f1;
+    z-index: 20;
+    text-shadow: 0 20px 25px #0b0b0b, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .point{
+    display: block;
+    margin-left: 2vw;
+  }
+  .cont{
+    height: 45vw;
+    display: flex;
+    width: 100%;
+    gap: 10vw;
+    margin-top: -25vh;
+  }
+  .block2{
+    margin-left: 0vw;
+  }
+  .homeimgs{
+    width: 45vw;
+    height: 50vh;
+    margin-left: 5vw;
+  }
+  .startquotes{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    transform: scaleX(-1);
+    left:-2vw;
+    position: absolute;
+    margin-top: -4vh;
+  }
+  .endquotes{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    position: relative;
+    margin-top: -9vh;
+    margin-left: 21vw;
+  }
+  .endquotes2{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    position: relative;
+    margin-top: -9vh;
+    margin-left: 17vw;
+  }
+  .endquotes3{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    position: relative;
+    margin-top: -9vh;
+    margin-left: 25.5vw;
+  }
+  .endquotes4{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    position: relative;
+    margin-top: -9vh;
+    margin-left: 20vw;
+  }
+  .endquotes5{
+    font-size: 60px;
+    font-family: "Catamaran", serif;
+    position: relative;
+    margin-top: -9vh;
+    margin-left: 15vw;
+  }
+  .headingmain:before,
+  .headingmain:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid #7ba452;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  .headingmain:before {
+    border-color: #7ba452#7ba452 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .headingmain:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #7ba452 #7ba452;
+    box-shadow: 25px 25px 25px rgba(8, 8, 9, 0.8);
+  }
+  .ImageByUser{
+    width: 100%; /* Ensure this fills the entire form's width */
+    height: auto; /* Adjust height as needed */
+    border: 1px rgb(45, 112, 14) dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+  }
+  .birdImageInput{
+    width:100% ;
+    height: 10vh;
+  }
+  .birdimgform{
+    background:linear-gradient(142deg, rgba(182,231,130,1) 19%, rgba(159,218,125,1) 67%, rgba(95,156,95,1) 100%);
+   
+    justify-self: center;
+    width: 30vw; /* 60% of the viewport width */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height calculations */
+    padding: 20px; /* Optional padding */
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; 
+  }
+  .imagePreviewContainer{
+    width: 30vw;
+    height: 35vh;
+  }

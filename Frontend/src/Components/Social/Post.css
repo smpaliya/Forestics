@@ -1,0 +1,31 @@
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .postWrapper{
+        width:5vw;
+        height: 6vh;
+
+    }
+    .PostImage{
+        width:30vw;
+        height: 23vh;
+        border-radius: 5px;
+        box-shadow: 0px -4px 7px #cffafe ,
+        4px 0px 7px  #ede9fe,
+        0px 4px 7px  #d9f99d,
+        -4px 0px 7px  #ffe4e6;
+
+    }
+    .postBottomSide{
+        display:inline;
+        gap: 2px;
+    }
+    .likes{
+        margin-top: -3.8vh;
+        margin-left:6vw;
+        font-size: 13px;
+    }
+
+    }
+  

@@ -1,0 +1,117 @@
+.AddPostPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #e7f9e7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ImguploadForm {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  .commlabel{
+    margin-left: 8vw;
+    margin-top: 8vh;
+    position: relative;
+    padding-top: 5vh;
+    
+  }
+  .imagePreviewContainer{
+    width: 30vw;
+    height: 30vh;
+  
+  }
+ .imagePreview{
+  width: 30vw;
+  height: 36vh;
+  margin-left: 0.5vw;
+  padding-right: 0.5vw;
+  margin-bottom: 6vh;
+  margin-top: -5vh;
+  padding-bottom: 2vh;
+ }
+
+  .uploadLabel {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color:black;
+    align-self: center;
+    margin-left: 8vw;
+  }
+  
+  .uploadPicture {
+    margin-bottom: 1.5rem;
+  }
+  
+  .fileinput {
+    width: 30vw;
+    height:4vh;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    justify-self: center;
+    align-self: center;
+    margin-left: 7vw;
+  }
+  .Comment{
+    width: 30vw;
+    height:7vh;
+    object-fit: cover;
+    border: 2px dashed rgb(174, 221, 146);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    margin-top: 0.5vh;
+    margin-left: 0.5vw;
+  }
+  .Comment:hover{
+    border-color: rgba(95,156,95,1);
+  }
+  
+  input[type="image"]:hover {
+    border-color: rgba(95,156,95,1);
+  }
+  
+  button[type="submit"] {
+    background-color: rgba(95,156,95,1);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgba(159,218,125,1);
+    color: rgb(41, 79, 20);
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      padding: 1.5rem;
+    }
+  
+    .uploadLabel {
+      font-size: 1rem;
+    }
+  
+    input[type="image"] {
+      height: 150px;
+    }
+  
+    button[type="submit"] {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
